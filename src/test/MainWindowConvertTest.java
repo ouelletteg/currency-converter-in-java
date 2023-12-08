@@ -68,6 +68,15 @@ public class MainWindowConvertTest {
         assertEquals(0.26, MainWindow.convert(japan, china, currencies, amount));
     
     
+        //CAD et AUD
+        //Les devises CAD et AUD ne sont pas présentes. On présume que si on les ajoute, les tests marcheraient comme les autres
+        
+        //Exemple USD - amount = 5
+        //Taux CAD: 1 USD = 1.36 CAD
+        //Taux AUD : 1 USD = 1.52
+        //assertEquals(6.8, MainWindow.convert(usd, cad, currencies, amount));
+        //assertEquals(7.6, MainWindow.convert(usd, aud, currencies, amount));
+
     }
 
     @Test
