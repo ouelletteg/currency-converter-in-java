@@ -12,9 +12,12 @@ public class TestCurrency {
     @Test
     public void testDevises(){
 
-        //Seulement USD, CAD et AUD sont testés car ils ont échoué dans MainWindowConvertTest
+        //Seulement USD et CAD sont testés car les tests deviennent trop répétitifs.
         //Ces tests sont représentatifs des autres devises, car il suffit de remplacer exchange 
         //value par celle d'une autre devise exemple EURO à GBP mettre 0.71. 
+
+        //Les devises CAD et AUD sont prises sur Google.com en date du 7 décembre.
+        //Les autres devises sont les mêmes que dans le fichier Currency.java.
 
         //Test avec USD, amount to convert = 5.00$ USD
 
