@@ -1,5 +1,5 @@
+//Sara Gair (20216922) Geneviève Ouellette (20141307)
 package test;
-
 
 import currencyConverter.Currency;
 import currencyConverter.MainWindow;
@@ -88,12 +88,14 @@ public class MainWindowConvertTest {
 
         //Avant la limite gauche, chiffre negatif
          assertEquals(-247.08, MainWindow.convert(usa, japan, currencies, -2.00));
+        //Ce test devrait donner null ou 0, car c'est en dehors des limites.
 
         //Limite droite 1 000 000
         assertEquals(930000.00, MainWindow.convert(usa, euro, currencies, 1000000.00));
 
         //Après limite droite
         assertEquals(1395000, MainWindow.convert(usa, euro, currencies, 1500000.00));
+        //Ce test devrait donner null, car c'est en dehors des limites.
 
     }
 }
