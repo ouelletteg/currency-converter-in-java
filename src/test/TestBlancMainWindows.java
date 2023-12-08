@@ -158,7 +158,7 @@ public class TestBlancMainWindows {
         }
         currencyList6 = Currency.init();
     }
-    
+
     @Test
     public void testChemin1(){
         initiate();
